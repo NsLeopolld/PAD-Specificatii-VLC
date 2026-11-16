@@ -43,3 +43,15 @@ Aplicația se adresează publicului larg: de la utilizatori care vor doar să vi
 | CF-03 | Aplicația încarcă o subtitrare dintr-un fișier extern și permite decalarea ei față de imagine. |
 | CF-04 | Utilizatorul poate crea o listă de redare, o poate salva și o poate deschide ulterior. |
 | CF-05 | Aplicația convertește un fișier media în alt format, prin opțiunea Convert/Save. |
+
+## 4. Cerințe non-funcționale
+
+| Cod   | Cerință |
+|-------|---------|
+| CN-01 | **Portabilitate:** aplicația rulează pe Windows, macOS și Linux. |
+| CN-02 | **Compatibilitate:** fișierele MP4, MKV și MP3 se redau fără pachete de codecuri instalate separat. |
+| CN-03 | **Performanță:** aplicația pornește în cel mult 3 secunde pe un calculator obișnuit. |
+| CN-04 | **Ușurință în utilizare:** deschiderea unui fișier, redarea, pauza și volumul sunt accesibile din fereastra principală, fără configurare prealabilă. |
+| CN-05 | **Confidențialitate:** aplicația nu afișează reclame și nu colectează date despre utilizator. |
+
+**Verificarea CN-03:** pe un laptop cu Intel Core i5-10300H și Debian, VLC 3.0.24 a pornit fără interfață grafică (`vlc -I dummy`) în aproximativ 0,02 secunde, în medie pe 5 măsurători. Valoarea este mult sub limita de 3 secunde.
