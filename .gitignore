@@ -1,0 +1,11 @@
+# fișiere temporare create de Word / LibreOffice
+~$*
+.~lock.*#
+*.tmp
+
+# fișiere de sistem
+.DS_Store
+Thumbs.db
+
+# notițe personale, nu se publică
+notite_personale.txt
