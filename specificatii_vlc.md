@@ -55,3 +55,23 @@ Aplicația se adresează publicului larg: de la utilizatori care vor doar să vi
 | CN-05 | **Confidențialitate:** aplicația nu afișează reclame și nu urmărește activitatea utilizatorului. |
 
 **Verificarea CN-03:** pe un laptop cu Intel Core i5-10300H și Debian, VLC 3.0.24 a pornit fără interfață grafică (`vlc -I dummy`) în aproximativ 0,02 secunde, în medie pe 5 măsurători. Valoarea este mult sub limita de 3 secunde.
+
+## 5. Diagrame și interfețe
+
+Diagrama de mai jos arată pașii prin care trece utilizatorul când redă un fișier cu subtitrare (CF-01, CF-02, CF-03):
+
+```mermaid
+flowchart LR
+    A[Utilizatorul pornește VLC] --> B[Media > Open File]
+    B --> C{Formatul este suportat?}
+    C -- da --> D[Redarea începe]
+    C -- nu --> E[Mesaj de eroare]
+    D --> F[Subtitle > Add Subtitle File]
+    F --> G[Subtitrarea se sincronizează cu G / H]
+```
+
+Fereastra principală are trei zone: bara de meniuri (Media, Playback, Audio, Video, Subtitle, Tools, View, Help), zona de redare și bara de control (redare, oprire, derulare, volum).
+
+## 6. Concluzii
+
+VLC media player îndeplinește cerințele funcționale de bază ale unui player multimedia, iar cerințele non-funcționale, mai ales portabilitatea și compatibilitatea cu formatele, explică de ce aplicația este atât de răspândită. O versiune viitoare a acestui document ar putea adăuga cerințe pentru redarea fluxurilor din rețea și pentru accesibilitate.
