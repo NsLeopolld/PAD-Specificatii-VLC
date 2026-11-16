@@ -52,6 +52,6 @@ Aplicația se adresează publicului larg: de la utilizatori care vor doar să vi
 | CN-02 | **Compatibilitate:** fișierele MP4, MKV și MP3 se redau fără pachete de codecuri instalate separat. |
 | CN-03 | **Performanță:** aplicația pornește în cel mult 3 secunde pe un calculator obișnuit. |
 | CN-04 | **Ușurință în utilizare:** deschiderea unui fișier, redarea, pauza și volumul sunt accesibile din fereastra principală, fără configurare prealabilă. |
-| CN-05 | **Confidențialitate:** aplicația nu afișează reclame și nu colectează date despre utilizator. |
+| CN-05 | **Confidențialitate:** aplicația nu afișează reclame și nu urmărește activitatea utilizatorului. |
 
 **Verificarea CN-03:** pe un laptop cu Intel Core i5-10300H și Debian, VLC 3.0.24 a pornit fără interfață grafică (`vlc -I dummy`) în aproximativ 0,02 secunde, în medie pe 5 măsurători. Valoarea este mult sub limita de 3 secunde.
